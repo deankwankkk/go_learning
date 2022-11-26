@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	// start()
-	//getMostLengthOfChar()
-	res := noRepeating()
-	fmt.Println(res)
+	getMostLengthOfChar()
+	// res := noRepeating()
+	// fmt.Println(res)
 }
 
 func start() {
@@ -45,6 +45,7 @@ func getMostLengthOfChar() {
 	template := "abcabcbb"
 	// lastOccurred
 	lastOccurred := make(map[byte]int)
+
 	start := 0
 	maxLength := 0
 	for k, v := range []byte(template) {

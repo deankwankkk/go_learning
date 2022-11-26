@@ -1,6 +1,9 @@
 ### 容器
+
 #### 数组
-> go中的数组是值类型
+
+> go 中的数组是值类型
+
 ```go
 // 声明方式
 var arr [3]int // [0 0 0]
@@ -13,8 +16,11 @@ var arr3 [4][5]int
 // 遍历
 for k, v := range arr {....}
 ```
+
 #### 切片
-> 切片可以理解为数组的view
+
+> 切片可以理解为数组的 view
+
 ```go
 // 切片创建方式
 arr := [3]int{1, 2, 3, 4, 5}
@@ -32,10 +38,13 @@ slice3 := append(slice1, 6) // [1 2 3 4 5 6]
 // copy(dest, src)
 copy(slice2, slice3)
 
-// go的slice中没有"+"，所以拼接或删除需要用append实现 
+// go的slice中没有"+"，所以拼接或删除需要用append实现
 ```
+
 #### map
-> map是无序的，以key-value的形式存在
+
+> map 是无序的，以 key-value 的形式存在
+
 ```go
 // 声明方式
 // map[key-type]value-type{}
